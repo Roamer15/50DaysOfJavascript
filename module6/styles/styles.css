@@ -16,7 +16,9 @@ body {
 
 .bg {
   height: 100vh;
-  background: url('/assets/blur\ bg.avif') no-repeat center center/cover;
+  background: url('/assets/soliman-cifuentes-mhad_4H6S14-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
   position: absolute;
   top: -30px;
   left: -30px;
