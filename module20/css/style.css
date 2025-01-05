@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #1b084c;
+    background: radial-gradient(circle, #1b084c67, #1b084cc7);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+
+    h1 {
+        font-size: larger;
+    }
+}
+
+.user-form {
+    width: 100%;
+    max-width: 700px;
+
+    input {
+        width: 100%;
+        display: block;
+        background: #1b084c;
+        background: linear-gradient(50deg, purple, violet, indigo);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        box-shadow: 0 5px 10px indigo;
+        padding: 1rem;
+    }
+}
+
+.user-form input::placeholder {
+    color: antiquewhite;
+}
+
+.user-form input:focus {
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+}
+
+#main-content {
+    margin-top: 1rem;
+}
+
+.card {
+    max-width: 800px;
+    background: #1b084c;
+    background: radial-gradient(circle, #1b084c67, #1b084cc7);
+    box-shadow: 0 5px 10px indigo;
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 10px solid black;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: beige;
+    margin-left: 2rem;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        max-width: 400px;
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+
+            strong {
+                font-size: 0.9rem;
+                margin-left: 0.6rem;
+            }
+        }
+    }
+}
+
+.repo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: #ab5ccd;
+    font-size: 0.7rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.repo:hover {
+    outline: none;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
