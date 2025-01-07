@@ -23,7 +23,7 @@ body {
 .fill {
   height: 145px;
   width: 145px;
-  background-image: url('../assets/coke.jpg');
+  background-image: url("/assets/coke.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
