@@ -1,22 +1,22 @@
-const jokes = document.getElementById("joke");
-const jokeBtn = document.getElementById("jokeBtn");
+const jokes = document.getElementById('joke')
+const jokeBtn = document.getElementById('jokeBtn')
 
-jokeBtn.addEventListener("click", generateJoke);
+jokeBtn.addEventListener('click', generateJoke)
 
-generateJoke();
+generateJoke()
 // using async await
-async function generateJoke() {
+async function generateJoke () {
   const config = {
     headers: {
-      Accept: "application/json",
-    },
-  };
+      Accept: 'application/json'
+    }
+  }
 
-  const res = await fetch("https://icanhazdadjoke.com", config);
+  const res = await fetch('https://icanhazdadjoke.com', config)
 
-  const data = await res.json();
+  const data = await res.json()
 
-  jokes.innerHTML = data.joke;
+  jokes.innerHTML = data.joke
 }
 
 // using .then()
